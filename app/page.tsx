@@ -40,7 +40,15 @@ export default async function Home() {
               <Link
                 className="group relative block h-48 overflow-hidden bg-gray-100 md:h-64"
                 href={`/movie/${movie.id}`}
-              ></Link>
+              >
+                <Image
+                  src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                  alt="movie banner"
+                  width={500}
+                  height={500}
+                  className=" absolute inset-0 h-full w-full object-cover object-center transition duration-200 hover:scale-125"
+                />
+              </Link>
             </div>
           ))}
         </div>
