@@ -6,3 +6,12 @@ export interface Trending {
     overview: string;
   }[];
 }
+
+export interface Movie {
+  title: string;
+  homepage: string;
+  original_language: string;
+  release_date: string;
+  backdrop_path: string;
+  overview: string;
+}

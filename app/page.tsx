@@ -49,6 +49,17 @@ export default async function Home() {
                   className=" absolute inset-0 h-full w-full object-cover object-center transition duration-200 hover:scale-125"
                 />
               </Link>
+              <div className="flex flex-1 flex-col p-4 sm:p-6 ">
+                <h2 className=" mb-2 text-lg font-semibold text-gray-800">
+                  <Link
+                    href={`/movie/${movie.id}`}
+                    className=" transition duration-100 hover:text-teal-500 active:text-teal-600"
+                  >
+                    {movie.title}
+                  </Link>
+                </h2>
+                <p className="text-gray-500 line-clamp-3">{movie.overview}</p>
+              </div>
             </div>
           ))}
         </div>
